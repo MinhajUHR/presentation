@@ -1,0 +1,81 @@
+from pptx import Presentation
+from pptx.util import Inches
+
+# Create a presentation object
+prs = Presentation()
+
+# Slide 1: Title Slide
+slide_1 = prs.slides.add_slide(prs.slide_layouts[0])
+title = slide_1.shapes.title
+subtitle = slide_1.placeholders[1]
+title.text = "Introduction to Data Communication and Multimedia"
+subtitle.text = "Understanding the Basics\nYour Name\nDate"
+
+# Slide 2: Table of Contents
+slide_2 = prs.slides.add_slide(prs.slide_layouts[1])
+title = slide_2.shapes.title
+content = slide_2.placeholders[1]
+title.text = "Table of Contents"
+content.text = "1. Overview of Data Communication\n2. Key Components of Data Communication\n3. Types of Data Communication\n4. Introduction to Multimedia\n5. Elements of Multimedia\n6. Applications of Data Communication and Multimedia\n7. Conclusion"
+
+# Slide 3: Overview of Data Communication
+slide_3 = prs.slides.add_slide(prs.slide_layouts[1])
+title = slide_3.shapes.title
+content = slide_3.placeholders[1]
+title.text = "Overview of Data Communication"
+content.text = "Definition: Data communication is the exchange of data between devices via a form of transmission medium.\nImportance: Enables sharing of information, resources, and services."
+
+# Slide 4: Key Components of Data Communication
+slide_4 = prs.slides.add_slide(prs.slide_layouts[1])
+title = slide_4.shapes.title
+content = slide_4.placeholders[1]
+title.text = "Key Components of Data Communication"
+content.text = "Sender: The device that sends the data.\nReceiver: The device that receives the data.\nTransmission Medium: The physical path between sender and receiver (e.g., cables, air).\nMessage: The data being communicated.\nProtocol: Rules governing data communication."
+
+# Slide 5: Types of Data Communication
+slide_5 = prs.slides.add_slide(prs.slide_layouts[1])
+title = slide_5.shapes.title
+content = slide_5.placeholders[1]
+title.text = "Types of Data Communication"
+content.text = "Simplex: One-way communication (e.g., TV broadcast).\nHalf-Duplex: Two-way communication, but not simultaneously (e.g., walkie-talkie).\nFull-Duplex: Two-way communication simultaneously (e.g., phone call)."
+
+# Slide 6: Introduction to Multimedia
+slide_6 = prs.slides.add_slide(prs.slide_layouts[1])
+title = slide_6.shapes.title
+content = slide_6.placeholders[1]
+title.text = "Introduction to Multimedia"
+content.text = "Definition: Multimedia is the integration of multiple forms of media.\nForms of Media: Text, audio, images, animations, video."
+
+# Slide 7: Elements of Multimedia
+slide_7 = prs.slides.add_slide(prs.slide_layouts[1])
+title = slide_7.shapes.title
+content = slide_7.placeholders[1]
+title.text = "Elements of Multimedia"
+content.text = "Text: Written content.\nAudio: Sound, music.\nImages: Photographs, graphics.\nAnimations: Moving graphics or text.\nVideo: Moving images."
+
+# Slide 8: Applications of Data Communication and Multimedia
+slide_8 = prs.slides.add_slide(prs.slide_layouts[1])
+title = slide_8.shapes.title
+content = slide_8.placeholders[1]
+title.text = "Applications of Data Communication and Multimedia"
+content.text = "Telecommunications: Internet, telephony.\nEducation: E-learning, digital classrooms.\nEntertainment: Streaming services, video games.\nBusiness: Video conferencing, virtual meetings."
+
+# Slide 9: Conclusion
+slide_9 = prs.slides.add_slide(prs.slide_layouts[1])
+title = slide_9.shapes.title
+content = slide_9.placeholders[1]
+title.text = "Conclusion"
+content.text = "Recap: Summarize the importance and components of data communication and multimedia.\nFuture Trends: Brief mention of emerging technologies (e.g., 5G, virtual reality)."
+
+# Slide 10: Questions and Answers
+slide_10 = prs.slides.add_slide(prs.slide_layouts[1])
+title = slide_10.shapes.title
+content = slide_10.placeholders[1]
+title.text = "Questions and Answers"
+content.text = "Prompt: Invite questions from the audience."
+
+# Save the presentation
+file_path = "/mnt/data/Introduction_to_Data_Communication_and_Multimedia.pptx"
+prs.save(file_path)
+
+file_path
